@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07110d">
+  <title>CloverTeam — закрытый хаус</title>
+  <meta name="description" content="CloverTeam — закрытое сообщество. Правила, анкета, съёмки и информация о сервере.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="CloverTeam — главная">
+      <span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M31.8 29.2C18.6 29.2 13 22.4 15.2 14.7c2.1-7.2 12.2-8.5 16.6 3.2 4.4-11.7 14.5-10.4 16.6-3.2 2.2 7.7-3.4 14.5-16.6 14.5Zm2.9 2.9c0-13.2 6.8-18.8 14.5-16.6 7.2 2.1 8.5 12.2-3.2 16.6 11.7 4.4 10.4 14.5 3.2 16.6-7.7 2.2-14.5-3.4-14.5-16.6Zm-5.8 0c0 13.2-6.8 18.8-14.5 16.6-7.2-2.1-8.5-12.2 3.2-16.6C5.9 27.7 7.2 17.6 14.4 15.5c7.7-2.2 14.5 3.4 14.5 16.6Zm2.9 2.9c13.2 0 18.8 6.8 16.6 14.5-2.1 7.2-12.2 8.5-16.6-3.2-4.4 11.7-14.5 10.4-16.6 3.2-2.2-7.7 3.4-14.5 16.6-14.5Z" fill="currentColor"/><path d="M32 35v23" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+      <span class="brand-name">CLOVER<span>TEAM</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <button class="nav-link active" data-page="rules">Правила</button>
+      <button class="nav-link" data-page="apply">Анкета и бот</button>
+      <button class="nav-link" data-page="clean">Чистка и норма</button>
+      <button class="nav-link" data-page="videos">Съёмки</button>
+      <button class="nav-link" data-page="server">О сервере</button>
+    </nav>
+    <div class="top-actions">
+      <button class="login-link" id="open-login">Войти</button>
+      <button class="button button-small" id="open-register">Для администрации <span>↗</span></button>
+    </div>
+    <button class="mobile-menu" id="mobile-menu" aria-label="Открыть меню"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> ЗАКРЫТОЕ СООБЩЕСТВО</div>
+        <h1>Свои люди.<br><span>Общие идеи.</span></h1>
+        <p class="hero-text">CloverTeam — место, где мы создаём, снимаем и развиваемся вместе. Здесь собрана важная информация для участников хауса.</p>
+        <div class="hero-actions">
+          <button class="button" id="hero-rules">Изучить правила <span>↗</span></button>
+          <button class="button button-ghost" id="hero-apply">Как попасть в хаус</button>
+        </div>
+        <div class="hero-note"><span class="shield">✳</span><span>Личный кабинет доступен только подтверждённой администрации.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Декоративная эмблема CloverTeam">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="clover-glow"></div>
+        <div class="big-clover">
+          <span class="leaf leaf-top"></span><span class="leaf leaf-right"></span>
+          <span class="leaf leaf-bottom"></span><span class="leaf leaf-left"></span>
+          <span class="clover-stem"></span>
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-dot"></span> EST. CLOVERTEAM</div>
+        <div class="floating-tag tag-bottom">✦ CREATE TOGETHER</div>
+      </div>
+      <div class="hero-index"><span>01</span><i></i> CLOVERTEAM / COMMUNITY</div>
+    </section>
+
+    <section class="quick-strip">
+      <div><span class="strip-icon">01</span><span><b>Правила хауса</b><small>Общие принципы и порядок</small></span></div>
+      <div><span class="strip-icon">02</span><span><b>Анкета и бот</b><small>Важная информация для участников</small></span></div>
+      <div><span class="strip-icon">03</span><span><b>Съёмки</b><small>Расписание и подготовка</small></span></div>
+    </section>
+
+    <section class="content-section" id="content">
+      <div class="section-heading">
+        <div><div class="eyebrow">CLOVERTEAM GUIDE</div><h2 id="section-title">Правила хауса</h2></div>
+        <span class="section-count" id="section-count">01 / 05</span>
+      </div>
+      <div class="section-layout">
+        <div class="section-intro">
+          <p id="section-description">Чтобы всем было комфортно работать и общаться, важно соблюдать общие договорённости.</p>
+          <div class="section-line"></div>
+          <span class="muted-label">ОБНОВЛЯЕМАЯ ИНФОРМАЦИЯ</span>
+        </div>
+        <div class="info-cards" id="info-cards">
+          <article class="info-card"><span class="card-number">01</span><div><h3>Уважение</h3><p>Относитесь к участникам с уважением. Обсуждайте разногласия спокойно и без личных оскорблений.</p></div><span class="card-arrow">↗</span></article>
+          <article class="info-card"><span class="card-number">02</span><div><h3>Командная работа</h3><p>Предупреждайте команду, если не можете выполнить договорённость или прийти на общую активность.</p></div><span class="card-arrow">↗</span></article>
+          <article class="info-card"><span class="card-number">03</span><div><h3>Безопасность</h3><p>Не передавайте доступы к аккаунтам и не публикуйте личную информацию других участников.</p></div><span class="card-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-banner">
+      <div class="join-symbol">♧</div>
+      <div><div class="eyebrow">CLOVERTEAM / STAFF</div><h2>Панель администрации</h2><p>Рабочее пространство команды с доступом по подтверждённой учётной записи.</p></div>
+      <button class="button button-light" id="banner-login">Войти в кабинет <span>↗</span></button>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">♧</span><span class="brand-name">CLOVER<span>TEAM</span></span></a><span>© 2026 CloverTeam. Закрытое сообщество.</span><span class="footer-status"><i></i> COMMUNITY SPACE</span></footer>
+
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="close-modal" aria-label="Закрыть">×</button>
+      <div class="modal-mark">♧</div>
+      <div class="eyebrow">CLOVERTEAM / STAFF ACCESS</div>
+      <h2 id="modal-title">Вход в кабинет</h2>
+      <p class="modal-subtitle" id="modal-subtitle">Доступ только для подтверждённой администрации.</p>
+      <div class="modal-tabs"><button class="modal-tab active" data-mode="login">Войти</button><button class="modal-tab" data-mode="register">Регистрация</button></div>
+      <form id="auth-form">
+        <div class="field register-field hidden"><label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="name@example.com"></div>
+        <div class="field register-field hidden"><label for="telegram">Telegram</label><input id="telegram" type="text" placeholder="@username"></div>
+        <div class="field register-field hidden"><label for="minecraft">Minecraft-ник</label><input id="minecraft" type="text" placeholder="Ваш игровой ник"></div>
+        <div class="field"><label for="password">Пароль</label><input id="password" type="password" autocomplete="current-password" placeholder="Введите пароль" required minlength="8"></div>
+        <button class="button submit-button" type="submit" id="submit-auth">Войти в кабинет <span>↗</span></button>
+        <p class="form-message" id="form-message" role="status">Регистрация доступна только администраторам из списка CloverTeam.</p>
+      </form>
+      <div class="modal-foot">Защищённый доступ <span>•</span> CloverTeam</div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
